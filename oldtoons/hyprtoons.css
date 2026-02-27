@@ -697,15 +697,52 @@ main:has(> article > section.meta) {
 .panel__header:has(+ [style="display: none;"]), .panel__header:has(+ [style="display: none;"]) > .panel__heading, .panel__header:has(+ [style="display: none;"]) > .panel__actions, .panel__header:has(+ [style="display: none;"]) > .panel__actions > .panel__action, .panel__heading:has(+ [style="display: none;"]), .panel__heading:has(+ .data-table-wrapper):not(:has(+ .data-table-wrapper tr)) {
   background: rgba(0, 12, 10, 0.65);
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   box-shadow: 0 0 30px rgba(21,176,151,0.08), inset 0 0 40px rgba(21,176,151,0.03);
   position: relative;
 }
 
-/* test */
-#chatbody .panelV2+chatbox{
-    background-color: #ff0000;
+/* Header */
+.panel__header, .u3d-chat-header, .u3d-hide-actions > .panel__heading{
+    background: rgba(0, 12, 10, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
 }
+
+.panel__actions {
+  background-color: #fff0;
+}
+
+.panel__action {
+    background-color: #fff0;
+}
+
+
+.panel__heading, .panel__heading--centered{
+    background: rgba(0, 12, 10, 0.65);
+}
+
+/* Cards */
+
+.torrent-card__header, .torrent-card__footer{
+    background: rgba(0, 12, 10, 0.65);
+}
+
+
+.user-stat-card {
+    background: rgba(0, 12, 10, 0.65);
+    border: solid 1.3px #15B097;;
+}
+
+.panel__tabs {
+    background: rgba(0, 12, 10, 0.65);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.top-users__place {
+    border: 2px solid #15B097;
+}
+
 
 @keyframes navScan {
  from { left: -100%; }
@@ -754,6 +791,16 @@ main:has(> article > section.meta) {
 .top-nav__right > *:hover {
  color: #15B097;
 }
+
+
+/* Below we need to test it and make it better */
+
+.top-nav__ratio-bar, .top-nav__ratio-bar a:hover {
+    color: #15B097;
+    animation: brandingPulse 8s ease-in-out infinite;
+    font-weight: 700;
+}
+
 
 @media screen and (max-width: 767px) {
  .top-nav {
@@ -838,7 +885,8 @@ main:has(> article > section.meta) {
  right: 0;
 }
 
-.nav-tab-menu__items { top: 30px; }
+
+
 
 .quick-search {
  top: 66px;
@@ -974,10 +1022,9 @@ footer > .footer__wrapper > .footer__section > p {
     color: #fff;
 }
 
-.form__group--short-horizontal > .form__group > .form__fieldset >.form__legend {
-    color: #fff;
+.form__legend {
+    color: #fff !important;
 }
-
 
 
 /* Upload Torrent Page */
