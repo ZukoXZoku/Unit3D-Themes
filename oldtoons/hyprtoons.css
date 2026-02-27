@@ -1044,10 +1044,6 @@ body > header {
   bottom: 0;
 }
 
-.secondary-nav {
-  width: calc(100% - 4rem);
-}
-
 .panel__heading {
   padding: 7px 10px;
 }
